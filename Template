@@ -1,0 +1,36 @@
+// ============ STEP 1: RECURSION ============
+int solve(args, current_state) {
+    if (base_case) return base_value;
+
+    int result = worst_value;
+    for (each choice) {
+        int sub = solve(args, next_state);  // recurse
+        result = combine(result, sub);       // min/max/sum etc
+    }
+    return result;
+}
+
+// ============ STEP 2: MEMO ============
+int solve(args, current_state, memo[]) {
+    if (base_case) return base_value;
+    if (memo[state] != -1) return memo[state];  // ← ADD
+
+    int result = worst_value;
+    for (each choice) {
+        int sub = solve(args, next_state, memo);
+        result = combine(result, sub);
+    }
+    return memo[state] = result;                // ← ADD
+}
+
+// ============ STEP 3: BOTTOM UP ============
+int solve(args) {
+    dp[base_case] = base_value;             // ← seed
+
+    for (state in REVERSE order of recursion) {
+        for (each choice) {
+            dp[state] = combine(dp[state], dp[next_state]);
+        }
+    }
+    return dp[initial_state];
+}
