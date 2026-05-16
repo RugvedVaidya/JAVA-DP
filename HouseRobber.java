@@ -19,6 +19,8 @@ public class HouseRobber {
         System.out.println(memo(arr, n-1, dp));
         System.out.println(tabulation(arr));
         System.out.println(spaceOptimized(arr));
+
+        sc.close();
     }
 
     public static int recursion(int arr[], int idx) {

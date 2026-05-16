@@ -1,0 +1,201 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+\usepackage{fontawesome5}  
+\usepackage{graphicx}
+
+%---------- Adjustments for single-page formatting ----------
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rugved Vaidya} \\[0.5em]
+    
+    +91 9158659931 \;\textbullet\;
+    \href{mailto:vaidya.rugved09@gmail.com}{vaidya.rugved09@gmail.com} \;\textbullet\;
+    \href{https://www.linkedin.com/in/rugved-vaidya-86944325a/}{LinkedIn} \;\textbullet\;
+    \href{https://github.com/RugvedVaidya}{Github} \;\textbullet\;
+    \href{https://leetcode.com/u/RugvedVaidya}{Leetcode}
+\end{center}
+
+
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textit{Final-year Computer Engineering student specializing in Generative AI and deep learning, with hands-on experience deploying RAG pipelines, LangChain agents, and CNN/LSTM models in production. Comfortable across the full ML lifecycle — data preprocessing, model training, hyperparameter tuning, and cloud deployment on AWS.}
+    }
+  }
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\begin{tabularx}{\linewidth}{X r}
+  \textbf{Vishwakarma Institute of Information Technology} & \textit{2022 - 2026(Expected)} \\
+  \textit{Bachelor of Technology in Computer Engineering $|$ CGPA: 8.64/10} & \\
+\end{tabularx}
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+     \item{
+     \textbf{Languages}{: Java, C/C++, Python, JavaScript} \\
+    \textbf{Frontend}{: React.js, Next.js, HTML, CSS}\\
+    \textbf{Backend}{: Node.js, Express.js, Flask}\\
+    \textbf{AI/ML \& GenAI}{: Machine Learning, Deep Learning, CNN, NLP, LangChain, RAG, OpenCV, LSTM, }\\
+     \textbf{Databases}{: MySQL, MongoDB} \\
+     \textbf{Vector Stores \& Search}{: FAISS, ChromaDB, Pinecone } \\
+     \textbf{Cloud Platform}{: AWS} \\
+     \textbf{Tools \& Libraries}{: HuggingFace, gTTS, Streamlit, TensorFlow, PyTorch}\\
+     }}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+
+
+%-----------Languages-----------
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+  \item{
+    \textbf{DocSense AI – RAG PDF Assistant} $|$ Link \hfill \textit{Dec 2025 - Jan 2026} \\
+    \textit{Technologies: Python, LangChain, Pinecone, HuggingFace, Next.js, Tailwind CSS, FastAPI,}
+    \resumeItemListStart
+        \resumeItem{Architected a production-grade Retrieval-Augmented Generation (RAG) pipeline using LangChain and FAISS vector database, integrating OpenAI and HuggingFace LLMs to enable semantic document search across 500+ page PDFs with sub-2-second query response time.}
+      \resumeItem{
+Engineered a semantic chunking strategy with context-aware prompt engineering, improving answer relevance by 40\% and reducing LLM hallucinations by 35\% compared to naive retrieval baselines.}
+      \resumeItem{Deployed an interactive Streamlit web application with ChromaDB persistent storage, delivering a scalable end-to-end NLP solution that cut document processing time by 50%.}
+    \resumeItemListEnd
+  }
+
+  \item{
+    \textbf{MudraTalk - Indian Sign Language Recognition System} \hfill \textit{Sept 2025 - Nov 2025} \\
+    \textit{Technologies: OpenCV, CNN, LSTM, MediaPipe , React.js , Node.js}
+    \resumeItemListStart
+      \resumeItem{Designed a real-time Indian Sign Language (ISL) recognition system using MediaPipe for hand landmark detection and a hybrid CNN-LSTM deep learning model, achieving 94–96\% gesture classification accuracy across a diverse gesture dataset.}
+      \resumeItem{Optimized an OpenCV-based preprocessing and inference pipeline to attain 120–180 ms per-frame latency, enabling smooth real-time performance suitable for accessibility and assistive technology applications.}
+      \resumeItem{
+Integrated a full-stack interface using React.js and Node.js with gTTS Text-to-Speech synthesis, achieving ~300 ms end-to-end speech output latency to support accessible communication for hearing-impaired users}
+    \resumeItemListEnd
+  }
+
+  \item{
+    \textbf{HyperTune ML - AutoML Hyperparameter Optimization} $|$ Link \hfill \textit{Feb 2025 - Apr 2025} \\
+    \textit{Technologies: Python, ML, RandomizedSearchCV, HTML, CSS, JS, Flask}
+    \resumeItemListStart
+      \resumeItem{
+Built an AutoML web application using Flask and Scikit-learn that automatically classifies tasks as regression or classification, automates feature engineering and data preprocessing, and reduces manual model configuration effort by 90%.}
+      \resumeItem{Implemented RandomizedSearchCV-based hyperparameter tuning with automated model selection, achieving up to 97\% accuracy and 92\% F1-score across benchmark datasets.}
+      \resumeItem{Developed a responsive REST API backend with a JavaScript and HTML/CSS frontend, rendering 6+ interactive evaluation graphs including confusion matrices, ROC curves, and learning curves to support data-driven decision-making.}
+    \resumeItemListEnd
+  }
+
+\end{itemize}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Google Data Analytics} $|$ Coursera $|$ Dec 2025 \\
+      \textbf{IBM Data Science} $|$ Coursera $|$ May 2025 \\
+      \textbf{Machine Learning A-Z} $|$ Coursera $|$ Dec 2024
+    }
+  }
+\end{itemize}
+
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+%\section{Position of Responsibility}
+%\begin{itemize}[leftmargin=0.15in, label = {}]
+%\item {
+ %\textbf{Technical Head } $|$ Link \hfill \textit{Aug 2024 - Nov 2025} \\
+% \textit{IoT Forum, VIIT}
+   % \resumeItemListStart
+   %     \resumeItem{Led the development of Smart Locker System using raspberry pi with %QR code-based access through phone.}
+  %    \resumeItem{Designed a WiFi setup process via raspberry pi for seamless %connectivity.}
+  %  \resumeItemListEnd
+  %}
+%-------------------------------------------
+\end{document}
